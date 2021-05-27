@@ -5,7 +5,7 @@
 %define ngid  8967
 
 Name:           %{srcname}
-Version:        4.1
+Version:        4.2
 Release:        1%{?dist}
 Summary:        Python Capture Agent for Opencast
 
@@ -150,6 +150,9 @@ fi
 
 
 %changelog
+* Thu May 27 2021 Lars Kiesow <lkiesow@uos.de> - 4.2-1
+- Update to pyCA 4.2
+
 * Tue Mar 02 2021 Lars Kiesow <lkiesow@uos.de> - 4.1-1
 - Update to pyCA 4.1
 
