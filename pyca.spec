@@ -5,8 +5,8 @@
 %define ngid  8967
 
 Name:           %{srcname}
-Version:        4.2
-Release:        2%{?dist}
+Version:        4.3
+Release:        1%{?dist}
 Summary:        Python Capture Agent for Opencast
 
 License:        LGPL
@@ -25,11 +25,7 @@ Requires:       %{py3_dist python-dateutil}
 Requires:       %{py3_dist configobj}
 Requires:       %{py3_dist sqlalchemy}
 Requires:       %{py3_dist sdnotify}
-%if 0%{?el8}
-Requires:       python3.6dist(flask) >= 0.12.2
-%else
 Requires:       %{py3_dist flask}
-%endif
 
 # needed for tests:
 BuildRequires: %{py3_dist pycurl}
@@ -154,8 +150,8 @@ fi
 
 
 %changelog
-* Thu May 27 2021 Lars Kiesow <lkiesow@uos.de> - 4.2-2
-- Fix flask dependency
+* Thu May 27 2021 Lars Kiesow <lkiesow@uos.de> - 4.3-1
+- Update to pyCA 4.3
 
 * Thu May 27 2021 Lars Kiesow <lkiesow@uos.de> - 4.2-1
 - Update to pyCA 4.2
