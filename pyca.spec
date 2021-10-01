@@ -26,6 +26,7 @@ Requires:       %{py3_dist configobj}
 Requires:       %{py3_dist sqlalchemy}
 Requires:       %{py3_dist sdnotify}
 Requires:       %{py3_dist flask}
+Requires:       %{py3_dist prometheus_client}
 
 # needed for tests:
 BuildRequires: %{py3_dist pycurl}
@@ -35,6 +36,7 @@ BuildRequires: %{py3_dist sqlalchemy}
 BuildRequires: %{py3_dist sdnotify}
 BuildRequires: %{py3_dist flask}
 BuildRequires: %{py3_dist psutil}
+BuildRequires: %{py3_dist prometheus_client}
 
 BuildRequires:     systemd
 Requires(post):    systemd
