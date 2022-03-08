@@ -5,8 +5,8 @@
 %define ngid  8967
 
 Name:           %{srcname}
-Version:        4.4
-Release:        2%{?dist}
+Version:        4.5
+Release:        1%{?dist}
 Summary:        Python Capture Agent for Opencast
 
 License:        LGPL
@@ -60,7 +60,6 @@ devices like the Raspberry Pi.
 
 %prep
 %autosetup -n pyCA-%{version}
-sed -i 's/prometheus_client>=0.10.1/prometheus_client>=0.9/' requirements.txt setup.py
 
 %build
 npm ci
@@ -153,6 +152,9 @@ fi
 
 
 %changelog
+* Tue Mar 08 2022 Lars Kiesow <lkiesow@uos.de> - 4.5-1
+- Update to pyCA 4.5
+
 * Fri Oct 01 2021 Lars Kiesow <lkiesow@uos.de> - 4.4-2
 - Lower required Prometheus client version
 
