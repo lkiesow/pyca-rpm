@@ -2,7 +2,7 @@
 
 Name:           python-%{srcname}
 Version:        0.3.2
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        A Python implementation of systemd's service notification protocol
 
 License:        MIT
@@ -45,5 +45,8 @@ cp %{SOURCE1} .
 %{python3_sitelib}/%{srcname}/
 
 %changelog
+* Wed Mar 09 2022 Lars Kiesow <lkiesow@uos.de> - 0.3.2-2
+- Bump for new Python ABI
+
 * Sun May 31 2020 Lars Kiesow <lkiesow@uos.de> - 0.3.2-1
 - Initial build
