@@ -6,7 +6,7 @@
 
 Name:           %{srcname}
 Version:        4.5
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Python Capture Agent for Opencast
 
 License:        LGPL
@@ -16,6 +16,7 @@ Source0:        https://github.com/opencast/pyCA/archive/v%{version}.tar.gz
 BuildArch:      noarch
 
 BuildRequires:  python3-devel
+BuildRequires:  %{py3_dist setuptools}
 BuildRequires:  npm
 BuildRequires:  gcc-c++
 
@@ -152,6 +153,9 @@ fi
 
 
 %changelog
+* Wed Mar 09 2022 Lars Kiesow <lkiesow@uos.de> - 4.5-2
+- Require setuptools
+
 * Tue Mar 08 2022 Lars Kiesow <lkiesow@uos.de> - 4.5-1
 - Update to pyCA 4.5
 
